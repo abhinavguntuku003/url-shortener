@@ -37,8 +37,8 @@ def shorten():
     conn.commit()
     conn.close()
 # ngrok url for Mobile QR code scanning
-    # BASE_URL = "https://feigned-leda-nonhomogeneously.ngrok-free.dev/"
-    short_url = request.host_url + code
+    BASE_URL = "https://url-shortener-abhinav.onrender.com/"
+    short_url = BASE_URL + code
     return jsonify({"short_url": short_url})
 
 # Redirect
